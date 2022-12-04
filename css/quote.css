@@ -1,0 +1,231 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+body{
+    /* height: 100vh;
+	width: 100%; */
+	background-image: url(../img/PKRIC81.jpg);
+	background-size: cover;
+	/* background-position: ; */
+    /* filter: blur(8px); */
+}
+.form-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border: 1px black;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.2);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+.box > input{
+    border: 1px black;
+    border-radius: 8px;
+    padding: 0 16px;
+    height: 36px;
+    margin-bottom: 1rem;
+}
+.box > textarea{
+    border: 1px black;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.box > input[type="submit"]{
+    margin-top: 20px;
+    background-color: #f9004d;
+    border: 0;
+    border-radius: 8px;
+    height: 36px;
+    color: white;
+}
+
+@keyframes ripples{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+.forgotpassword{
+    font-size: smaller;
+    color: grey;
+}
+.donthavencct{
+    font-size: smaller;
+    color: grey;
+}
+.formhead{
+    color: #9f000f;
+}
+
+
+
+
+
+
+.hero{
+	/* height: 100vh; */
+	width: 100%;
+	/* background-image: url(../img/PKRIC81.jpg);
+	background-size: cover;
+	background-position: center; */
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: rgb(27, 29, 30);
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #f01c1cc7;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #433131;
+	transition: .4s;
+}
+.btn{
+	background-color:#483c3c;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s;
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+
+
+
+/*
+Responsive code for:
+  1. Mobile size - 321px
+  2. Tablet size - 376px
+  3. Desktop size - 426px
+  4. Large desktop size - 769px
+*/
+@media screen and (max-width: 321px){
+    .hero{
+        background-image: url(../img/PKRIC81.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .content{
+        top: 50%;
+        left:8%;
+        transform: translateY(-50%);
+    }
+    .box{
+        width: 80%;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 376px){
+    .hero{
+        background-image: url(../img/PKRIC81.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .content{
+        top: 50%;
+        left:8%;
+        transform: translateY(-50%);
+    }
+    .box{
+        width: 80%;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 426px){
+    .hero{
+        background-image: url(../img/PKRIC81.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .content{
+        top: 50%;
+        left:8%;
+        transform: translateY(-50%);
+    }
+    .box{
+        width: 80%;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 769px){
+    .hero{
+        background-image: url(../img/PKRIC81.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .content{
+        top: 50%;
+        left:8%;
+        transform: translateY(-50%);
+    }
+    .box{
+        width: 80%;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+}
